@@ -53,10 +53,15 @@
 ## Deployment
 Not applicable: this project is delivered as Jupyter notebooks.
 
+## Main libraries
 | Library | How I used it |
 |---|---|
 | pandas | loading and cleaning data, groupby analysis) |
 | matplotlib | e.g. pie chart, histogram, line chart |
 | seaborn | e.g. histogram, violin plot, correlation matrix |
 | os | moving between directories |
-N.B. Some plots made use of more than one library.
+
+N.B. Some plots made use of more than one library
+
+## Credits:
+I sincerely thank the Claude (Anthropic) developers for creating a brilliant analytical tool, my course colleagues and the Code Institute team for their invaluable support, and Sakshi Goyal who created the Credit Card customers dataset.
