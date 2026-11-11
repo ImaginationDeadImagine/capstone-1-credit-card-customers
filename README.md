@@ -27,3 +27,11 @@
 | Violin plot | H4: Is low credit usage associated with churn? | Demonstrates the shape of distributions, showing where values cluster, and includes a mini-boxplot. |
 | Heatmap | What are the stronegst correlations with churn? | Low total transaction count, declining transaction count, and low credit card usage all correlate with increased churn. Particularly supports H1 and H4.|
 
+- **Analysis techniques:**
+    - Median splits were evident in the histogram of total transaction counts and in the violin plot.
+    - Churn rates were investigated using groupby, both for months of account inactivity and counts of customer contacts.
+    - Correlation was used to confirm associations that were suggested by the analysis, and to reveal new associations.
+    - Limitations included: 1. there is no way to distinguish between customers who transact and pay off their balance each month, and those who do not transact;  2. the dataset does not provide information on the time interval over which customers who churned left; 3. certain groups contained relatively few customers on which to base firm conclusions (such as the 54 churning customers with a churn rate of 100%); 4. the revolving credit balance may be a snapshot or could be an average over a certain time interval.
+    - Role of AI: I used Claude (Anthropic) as an AI tutor throughout this project. It explained concepts, helped me plan the project against the assessment criteria, helped me understand and fix errors, provided fill-in-the-blank code templates and some short code snippets, and gave feedback on my written explanations. Claude improved my storytelling narrative with pithy observations like "watch for customers going quiet".  I wrote, ran and tested all of the code myself, made the analysis decisions, and interpreted the results.
+  
+- **Ethical considerations:** The data was obtained from a public source and was covered by the [CC0: Public Domain](https://creativecommons.org/publicdomain/zero/1.0/) licence.  The file contained anonymised data and during the ETL process the ID column was dropped.
