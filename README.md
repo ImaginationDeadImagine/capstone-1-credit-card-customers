@@ -35,3 +35,28 @@
     - Role of AI: I used Claude (Anthropic) as an AI tutor throughout this project. It explained concepts, helped me plan the project against the assessment criteria, helped me understand and fix errors, provided fill-in-the-blank code templates and some short code snippets, and gave feedback on my written explanations. Claude improved my storytelling narrative with pithy observations like "watch for customers going quiet".  I wrote, ran and tested all of the code myself, made the analysis decisions, and interpreted the results.
   
 - **Ethical considerations:** The data was obtained from a public source and was covered by the [CC0: Public Domain](https://creativecommons.org/publicdomain/zero/1.0/) licence.  The file contained anonymised data and during the ETL process the ID column was dropped.
+- **Unfixed bugs:**	There were no unfixed bugs in the finished project.
+
+## Development Roadmap
+
+### Challenges and how I handled them
+- **NameError when dropping columns:** [CLIENTNUM] looked like a variable → fixed by quoting the column name i.e. ["CLIENTNUM"]
+- **Dealing with "Unknowns":** There were 33.4% of rows with at least one 'Unknown' value → fixed by deciding to keep the rows as is, rather than lose valuable data
+- **FileNotFoundError after Run All:** I was taken to the wrong directory via the chdir cell → fixed by always restarting the kernel before Run All
+- **pandas not found (kernel vs interpreter):** the kernel and Pylance were using different interpreters → fixed by reinstalling pandas via requirements.txt
+- **Blank violin plot:** The violin plot showed a blank canvas because I asked seaborn for categories called “Stayed” and “Churned”. The Churn column only contains 0 and 1. So seaborn found nothing to draw. → fixed by asking for categories from a new 'friendly' column.
+
+## What I would learn next
+- Machine learning to improve predictions of which customers will churn.
+- Statistical tests to check whether differences are significant.
+
+## Deployment
+Not applicable: this project is delivered as Jupyter notebooks.
+
+| Library | How I used it |
+|---|---|
+| pandas | loading and cleaning data, groupby analysis) |
+| matplotlib | e.g. pie chart, histogram, line chart |
+| seaborn | e.g. histogram, violin plot, correlation matrix |
+| os | moving between directories |
+N.B. Some plots made use of more than one library.
