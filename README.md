@@ -65,3 +65,6 @@ N.B. Some plots made use of more than one library
 
 ## Credits:
 I sincerely thank the Claude (Anthropic) developers for creating a brilliant analytical tool, my course colleagues and the Code Institute team for their invaluable support, and Sakshi Goyal who created the Credit Card customers dataset.
+
+### Media
+- No external media used. All charts were generated in the notebooks.
